@@ -58,7 +58,7 @@ function getUsername() {
  **/
 $teams = array(
     "justops.herokuapp.com" => array(
-        "root_url" => "/opsweekly",
+        "root_url" => "/",
         "display_name" => "Ops",
         "email_report_to" => "euc.soc@just-eat.com",
         "database" => "opsweekly",
@@ -265,7 +265,7 @@ $error_log_file = "/var/log/httpd/opsweekly_debug.log";
 // Fed into preg_replace so regexes are allowed
 $dev_fqdn = "/(\w+).vms.justops.herokuapp.com/";
 // The prod FQDN is then subsituted in place of the above string.
-$prod_fqdn = "justops.herokuapp.com";
+$prod_fqdn = "justops.herokuapp.com/";
 
 // Global configuration for irccat, used to send messages to IRC about weekly meetings.
 $irccat_hostname = '';
