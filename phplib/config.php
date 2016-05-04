@@ -263,9 +263,9 @@ $error_log_file = "/var/log/httpd/opsweekly_debug.log";
 // Dev FQDN
 // An alternative FQDN that will be accepted by Opsweekly for running a development copy elsewhere
 // Fed into preg_replace so regexes are allowed
-$dev_fqdn = "/(\w+).vms.justops.heroku.com/";
+$dev_fqdn = "/(\w+).vms.justops.herokuapp.com/";
 // The prod FQDN is then subsituted in place of the above string.
-$prod_fqdn = "justops.heroku.com";
+$prod_fqdn = "justops.herokuapp.com";
 
 // Global configuration for irccat, used to send messages to IRC about weekly meetings.
 $irccat_hostname = '';
